@@ -1,4 +1,10 @@
 # RubiksCubeSolver
+---
+## Solving Methods:
+- Breadth-first Search
+- Iterative Deepening Search 
+- A* (heuristic based)
+
 Most of the code runs off an array of characters representing the colors on each face using the number system identified in the assignment document. 
 This made cloning very easy for it’d be as simple as self.full_cube.copy().
 
@@ -13,3 +19,7 @@ If applyMovesStr is given a state to work from, it overwrites present cube’s s
 I tested this code locally using immediate test cases within the terminal itself.
 
 The code itself is commented enough for understanding.
+
+Because of system hardware limitations, I wasn't able to test with moves over 3. But for several combinations of moves, I wasn't able to test.
+
+==The heuristic used for AStar was counting how many quadrants on each face has the correct color==
