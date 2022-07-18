@@ -1,10 +1,28 @@
 # RubiksCubeSolver
 ---
+> This is only for a 2x2 cube
 ## Solving Methods:
 - Breadth-first Search
 - Iterative Deepening Search 
 - A* (heuristic based)
-
+---
+Variables: 
+- `cube_str`: 24 character string representing an entire cube
+- `n`: Integer representing iteration count in different contexts
+- `moves`: String of moves to apply on Rubiks Cube with ` ` as separator
+---
+The program uses terminal parametric inputs to tackle and do different functions.
+- `print`: Prints, to the terminal, every side of a solved Rubiks Cube formatted as a flattened cube
+- `print (str cube_str)`: Prints, to the terminal, every side of `cube_str` as a Rubiks Cube formatted as a flattened cube
+- `goal (str cube_str)`: Returns **True** or **False** based on whether cube is solved or not
+- `norm (str cube_str)`: Normalizes the cube using a hash map between corresponding colors using `DEFAULT_COLOR_MAP`
+- `shuffle (int n)`: Applies a set of moves randomly on the cube
+- `random (str moves, int n)`: Applies `moves` on a solved cube and applies `n` random moves to try and solve the cube.
+- `bfs (str moves)`:  Applies `moves` on a solved cube and attempt to solve it using BFS algorithm.
+- `ids (str moves)`: Applies `moves` on a solved cube and attempt to solve it using IDS algorithm
+- `astar (str moves)`: Applies `moves` on a solved cube and attemmpts to solve it using A*. Heuristic is based on number of quadrants with the correct corresponding color.
+- `applyMoveStr (str moves, str cube_str)`: Applies `moves` on given cube of cube state `cube_str`
+---
 Most of the code runs off an array of characters representing the colors on each face using the number system identified in the assignment document. 
 This made cloning very easy for it’d be as simple as self.full_cube.copy().
 
