@@ -38,6 +38,6 @@ I tested this code locally using immediate test cases within the terminal itself
 
 The code itself is commented enough for understanding.
 
-Because of system hardware limitations, I wasn't able to test with moves over 3. But for several combinations of moves, I wasn't able to test.
+Because of system hardware limitations, I wasn't able to test with moves over 3.
 
 ==The heuristic used for AStar was counting how many quadrants on each face has the correct color==
